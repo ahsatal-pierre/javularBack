@@ -24,7 +24,6 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
     volumes:
-    # to persist the data
       - pgdata:/var/lib/postgresql/data
 volumes:
   pgdata: {}
