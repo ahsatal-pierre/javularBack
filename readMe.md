@@ -1,14 +1,35 @@
-## Java, hibernate, postgreSQL
+# CRUD Template using Java, hibernate, postgreSQL, docker
 
-# database
+## docker-compose.yml
+update environments with your password, username and db name
+
+## intro
+mvn clean package -DskipTests
+docker-compose build
+
+## database
+(if "docker volume inspect pgdata" gives error, try "docker volume create pgdata" before)
 docker compose up -d java_db
 
-# app 
+## app 
 docker compose up java_app
 
-# check if all is running 
+## check if all is running 
 docker ps -a
 
-# docker-compose.yml
-
-update environments with your password, username and db name
+## tests
+In Postman try: 
+- POST localhost:8080/api/users
+body: 
+{
+    "name":"name",
+    "email":"name@gmail.com"
+}
+- GET localhost:8080/api/users
+- GET localhost:8080/api/users/1
+- PUT localhost:8080/api/users/1
+body: 
+{
+    "name":"another name"
+}
+- DELETE localhost:8080/api/users/1

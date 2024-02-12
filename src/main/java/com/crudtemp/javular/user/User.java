@@ -2,6 +2,8 @@ package com.crudtemp.javular.user;
 
 import jakarta.persistence.*;
 
+
+// Model
 @Entity
 @Table(name = "users")
 public class User {
