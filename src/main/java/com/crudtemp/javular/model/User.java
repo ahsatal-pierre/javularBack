@@ -1,4 +1,4 @@
-package com.crudtemp.javular.user;
+package com.crudtemp.javular.model;
 
 import jakarta.persistence.*;
 

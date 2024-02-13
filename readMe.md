@@ -5,7 +5,7 @@ update environments with your password, username and db name
 
 ## intro
 mvn clean package -DskipTests
-docker-compose build
+docker compose build
 
 ## database
 (if "docker volume inspect pgdata" gives error, try "docker volume create pgdata" before)
