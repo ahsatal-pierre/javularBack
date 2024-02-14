@@ -1,4 +1,5 @@
-# CRUD Template using Java, hibernate, postgreSQL, docker
+# JavularBack
+# CRUD Template using Angular, Java, hibernate, postgreSQL, docker
 
 ## docker-compose.yml
 update environments with your password, username and db name
